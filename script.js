@@ -13,7 +13,7 @@ function stringChop(str, size) {
 
     if (endIndex > str.length) {
       endIndex = str.length;
-      console.log(endIndex, "inside if");
+      
     }
 
     res.push(str.substring(startIndex, endIndex));
