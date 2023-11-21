@@ -1,5 +1,20 @@
 function stringChop(str, size) {
-  // your code here
+  let res = [];
+  let startIndex = 0;
+  let endIndex = 0;
+
+  while (endIndex < str.length) {
+    startIndex = endIndex;
+    endIndex = startIndex + Number(size);
+
+    if (endIndex > str.length) {
+      endIndex = str.length;
+      console.log(endIndex, "inside if");
+    }
+
+    res.push(str.substring(startIndex, endIndex));
+  }
+  return res;
 }
 
 // Do not change the code below
