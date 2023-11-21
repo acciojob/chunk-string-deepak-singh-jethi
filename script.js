@@ -1,9 +1,9 @@
 function stringChop(str, size) {
-  if(str.length==0){
-	  return [];
-  }
-	
   let res = [];
+  if (str.length == 0) {
+    return res;
+  }
+
   let startIndex = 0;
   let endIndex = 0;
 
